@@ -4,7 +4,7 @@ README
 
 1. Compiling the C++ code 
 2. Running the C++ unittests
-
+3. Running the C++ program
 
 ## 1. Compiling the C++ code 
 
@@ -21,13 +21,12 @@ ninja
 
 Note: ninja does the actual compiling (and linking)
 
-
 ## 2. Running the C++ unittests
 
 cd build
 ./test_main
 
-## 3. Running the application
+## 3. Running the program
 
 cd build
 ./main
