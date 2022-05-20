@@ -14,6 +14,7 @@ Getting cmake to generate a build.ninja file (instead of a Makefile)
 To have cmake generate ninja.build files instead of Makefiles, do this:
 (it's more usual to build into a subdir called build with cmake)
 
+mkdir -p build
 cd build
 cmake -GNinja ..
 ninja
@@ -26,4 +27,8 @@ Note: ninja does the actual compiling (and linking)
 cd build
 ./test_main
 
+## 3. Running the application
+
+cd build
+./main
 
