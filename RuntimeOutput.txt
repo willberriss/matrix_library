@@ -1,0 +1,47 @@
+will@zen build % pwd
+matrix-library/build
+
+# main
+
+will@zen build % ./main
+Matrix library demonstration
+
+Opening file: ../matrix_A.txt
+2	8	5
+1	1	1
+1	2	-1
+
+Opening file: ../vector_b.txt
+5
+-2
+2
+
+solution: -3.0, 2.0, -1.0
+will@zen build %
+
+# test_main
+
+will@zen build % ./test_main 
+[==========] Running 6 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 6 tests from MainTest
+[ RUN      ] MainTest.GivenMatrixA_WhenMatrixOfMinorsIsCalculated_ThenTheResultMatchesTheGroundTruth
+Calculating matrix of minors of A
+[       OK ] MainTest.GivenMatrixA_WhenMatrixOfMinorsIsCalculated_ThenTheResultMatchesTheGroundTruth (0 ms)
+[ RUN      ] MainTest.GivenMatrixOfMinors_WhenMatrixofMinorsIsMultipliedByCheckboard_ThenResultMatchesTheMatrixOfCofactorsGroundTruth
+[       OK ] MainTest.GivenMatrixOfMinors_WhenMatrixofMinorsIsMultipliedByCheckboard_ThenResultMatchesTheMatrixOfCofactorsGroundTruth (0 ms)
+[ RUN      ] MainTest.GivenMatrices_A_and_x_ThenMultiplying_A_and_x_gives_b
+[       OK ] MainTest.GivenMatrices_A_and_x_ThenMultiplying_A_and_x_gives_b (0 ms)
+[ RUN      ] MainTest.GivenMatrixA_WhenTheAdjugateMatrixIsCalculated_ThenTheResultMatchesTheGroundTruth
+[       OK ] MainTest.GivenMatrixA_WhenTheAdjugateMatrixIsCalculated_ThenTheResultMatchesTheGroundTruth (0 ms)
+[ RUN      ] MainTest.GivenMatrixA_WhenItsInverseIsCalculated_ThenItShouldMatchTheGroundTruth
+[       OK ] MainTest.GivenMatrixA_WhenItsInverseIsCalculated_ThenItShouldMatchTheGroundTruth (0 ms)
+[ RUN      ] MainTest.GivenMatrixAandItsInverseThenMultplyingThemProducesTheIdentityMatrix
+[       OK ] MainTest.GivenMatrixAandItsInverseThenMultplyingThemProducesTheIdentityMatrix (0 ms)
+[----------] 6 tests from MainTest (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test suite ran. (3 ms total)
+[  PASSED  ] 6 tests.
+will@zen build % 
+
